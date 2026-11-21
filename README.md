@@ -17,7 +17,7 @@
 ## Contribute to my open-source projects
 
 - [stayawake](https://github.com/gabe-maxxing/stayawake) keeps your Mac awake during long jobs.
-- [The Hackers Bay](https://github.com/Corvus-gent/the-hackers-bay) lets pirates RSVP to people and build their own parrot.
+- **SINK LUMA:** [The Hackers Bay](https://github.com/Corvus-gent/the-hackers-bay) lets pirates RSVP to people and build their own parrot.
 - [nightjar-mcp](https://github.com/gabe-maxxing/nightjar-mcp) is a small MCP server you can host yourself.
 - [FlowSOM](https://github.com/gabe-maxxing/FlowSOM) benchmarks clustering for flow cytometry with Python and Numba.
 
