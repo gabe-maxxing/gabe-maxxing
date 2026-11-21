@@ -6,57 +6,36 @@
   </picture>
 </a>
 
-<h1>Hey, I'm Gabriel 👋</h1>
-<p>CEO &amp; General at Corvus. One-man army building the coolest community in the world from San Francisco.</p>
-<p><em>🪔 I am looking for a human. — Diogenes</em></p>
-[Website](https://corvus.gent) · [LinkedIn](https://www.linkedin.com/in/francisco-gabriel-van-langenhove) · [X](https://x.com/gabe_maxxing) · [Email](mailto:gabriel@corvus.gent)
+<h1>I'm Gabriel 👋</h1>
 
-## What I’m building
+<p>Crazy Belgian Latino who speaks 7 languages and a few programming languages. I haven’t spoken the programming ones in a while. I only prompt engineer rn.</p>
 
-**[Corvus](https://corvus.gent)** · A community for people who like building things together. Play the [games](https://corvus.gent/games/), explore the [community music ranking](https://corvus.gent/music/), or [join the Legion](https://corvus.gent/legion/).
+<p>My stack is <a href="https://claude.ai/">Claude</a>, <a href="https://openai.com/codex/">Codex</a> and <a href="https://grok.com/">Grok</a>.</p>
 
-### Corvus development activity
+[Corvus](https://corvus.gent) · [LinkedIn](https://www.linkedin.com/in/francisco-gabriel-van-langenhove) · [X](https://x.com/gabe_maxxing)
 
-Git activity on Corvus’s main branch, including contributions. Snapshot from **19 Nov 2026 at 20:19 Brussels time**. The last day in each row is partial.
+## Contribute to my open-source projects
 
-| Period | Commits | Lines added | Lines removed |
-| --- | ---: | ---: | ---: |
-| 19 Nov 2026 | 12 | 1,378 | 103 |
-| 7 days ending 19 Nov 2026 | 108 | 97,795 | 3,887 |
-| 30 days ending 19 Nov 2026 | 243 | 128,954 | 7,725 |
+- [stayawake](https://github.com/gabe-maxxing/stayawake) keeps your Mac awake during long jobs.
+- [The Hackers Bay](https://github.com/Corvus-gent/the-hackers-bay) lets pirates RSVP to people and build their own parrot.
+- [nightjar-mcp](https://github.com/gabe-maxxing/nightjar-mcp) is a small MCP server you can host yourself.
+- [FlowSOM](https://github.com/gabe-maxxing/FlowSOM) benchmarks clustering for flow cytometry with Python and Numba.
 
-[Daily chart](https://corvus.gent/built#shipping) · [Weekly chart](https://corvus.gent/built?period=week#shipping) · [Monthly chart](https://corvus.gent/built?period=month#shipping)
+---
 
-## Coming soon · Compound × Corvus 🎬
+## Here's some cool stats about my coding obsession
 
-I built my own editing skills for Compound — from finding the moment to shaping the cut, captions and platform-specific edits, with a dedicated jiu-jitsu breakdown workflow.
+**380 commits in 14 days** on Corvus’s main branch, including contributors. Dates are in Brussels time.
 
-I used my own skill for my new Instagram: **[@gabinho_breakdows](https://www.instagram.com/gabinho_breakdows/)**. That’s where I’m putting the breakdown workflow into practice.
+![Bar chart of daily commits to Corvus main, November 7–20, 2026](assets/coding-obsession.svg)
 
-**Private for now. Open-source release coming soon.** Follow along here for the public release.
+[More Corvus build stats](https://corvus.gent/built#shipping)
 
-[See the workflow & scorecard →](https://corvus.gent/compound/impact/#my-editing-skill) · [Watch the breakdowns on Instagram →](https://www.instagram.com/gabinho_breakdows/)
+---
 
-## Open source
+## Here are a few cool characters from projects I made
 
-Pick a project below to try or contribute to. For a bigger idea, open an issue first. In a pull request, tell me what changed, why it matters, and how you tested it.
-
-| Project | What it does | Try or contribute |
-| --- | --- | --- |
-| <img src="assets/whitney.png" width="24" alt="Whitney, the stayawake watchdog"> [stayawake](https://github.com/Gabriellvl/stayawake) | A command-line switch that keeps your Mac awake during long jobs. | [Install](https://github.com/Gabriellvl/stayawake/releases/latest) · [Contribute](https://github.com/Gabriellvl/stayawake/blob/main/CONTRIBUTING.md) |
-| [nightjar-mcp](https://github.com/Gabriellvl/nightjar-mcp) | A small MCP server you can host yourself. | [Contribute](https://github.com/Gabriellvl/nightjar-mcp/blob/main/CONTRIBUTING.md) |
-| [FlowSOM](https://github.com/Gabriellvl/FlowSOM) | Python and Numba benchmarks for clustering flow cytometry data. | [Contribute](https://github.com/Gabriellvl/FlowSOM/blob/main/CONTRIBUTING.md) |
-
-[More projects open for contributions](https://github.com/search?q=user%3AGabriellvl+topic%3Aopen-for-contributions+archived%3Afalse&type=repositories) · [All repositories](https://github.com/Gabriellvl?tab=repositories)
-
-## Stack
-
-[Claude](https://claude.ai/) · [Codex](https://openai.com/codex/) · [Grok](https://grok.com/) · [Vercel](https://vercel.com/) · [Redis](https://redis.io/)
-
-## Other projects
-
-| Project | What it does |
-| --- | --- |
-| PartyCrasher 3000 · [CV](https://corvus.gent/cv) | I taught our UGent team’s TurtleBot to dance salsa. It could drive itself, talk, play music, serve beer and fire M&M’s from a candy cannon. |
-| [Dwengo-1](https://github.com/SELab-2/Dwengo-1) | Our SELab-2 team built a platform where teachers assign learning paths and follow student progress. |
-| [oxyvitale-402](https://github.com/Corvus-gent/oxyvitale-402) | A four-language payment status page for the Oxy-Vitale client site. |
+| Whitney | Captain Squawk |
+| :---: | :---: |
+| <a href="https://github.com/gabe-maxxing/stayawake"><img src="assets/whitney-terminal.gif" width="380" alt="Whitney animating inside the stayawake terminal"></a> | <a href="https://corvus.gent/hackersbay"><img src="assets/captain-squawk.gif" width="160" alt="Captain Squawk typing and squawking in pixel art"></a> |
+| The [stayawake](https://github.com/gabe-maxxing/stayawake) watchdog. | The [Hackers Bay](https://corvus.gent/hackersbay) parrot. |
