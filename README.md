@@ -16,6 +16,7 @@
 
 ## Contribute to my open-source projects
 
+- **NEW:** [Corvus Noctis](https://github.com/gabe-maxxing/corvus-noctis) is an operating system you can talk to. It's built from scratch in Rust in the spirit of TempleOS. [Try it in your browser](https://gabe-maxxing.github.io/corvus-noctis/), even on your phone.
 - [stayawake](https://github.com/gabe-maxxing/stayawake) keeps your Mac awake during long jobs.
 - **SINK LUMA:** [The Hackers Bay](https://github.com/Corvus-gent/the-hackers-bay) lets pirates RSVP to people and build their own parrot.
 - [nightjar-mcp](https://github.com/gabe-maxxing/nightjar-mcp) is a small MCP server you can host yourself.
