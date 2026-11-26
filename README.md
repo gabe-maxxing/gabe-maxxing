@@ -14,6 +14,10 @@
 
 [Corvus](https://corvus.gent) · [LinkedIn](https://www.linkedin.com/in/francisco-gabriel-van-langenhove) · [X](https://x.com/gabe_maxxing)
 
+## The Cube
+
+I'm building a playable Rubik's Cube for Corvus. Its lab lets you step through a move sequence, compare where two paths end, and rerun seeded scramble experiments in the browser.
+
 ## Contribute to my open-source projects
 
 - **NEW:** [Corvus Noctis](https://github.com/gabe-maxxing/corvus-noctis) is an operating system you can talk to. It's built from scratch in Rust in the spirit of TempleOS. [Try it in your browser](https://gabe-maxxing.github.io/corvus-noctis/), even on your phone.
