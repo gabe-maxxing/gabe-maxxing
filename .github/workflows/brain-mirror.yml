@@ -1,0 +1,24 @@
+name: brain mirror
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min: copy new thoughts from ntfy.sh into brain/
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: brain-mirror
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node council/mirror.mjs
+      - run: node council/spread-mirror.mjs
+      - run: |
+          git config user.name gabe-maxxing
+          git config user.email gabriel@corvus.gent
+          git add brain spread
+          git diff --cached --quiet || (git commit -m "brain + spread: new events" && git push)
