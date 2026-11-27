@@ -6,9 +6,18 @@ const TOPICS = { brain: 'corvus-brain-1729', steer: 'corvus-steer-1729' };
 await mkdir('brain', { recursive: true });
 const seen = new Set((await readFile('brain/.seen', 'utf8').catch(() => '')).split('\n').filter(Boolean));
 let added = 0;
+const marker = 'brain/.last-human-steer';
+let previous = 0;
+try { previous = Number(await readFile(marker, 'utf8')); }
+catch (error) { if (error.code !== 'ENOENT') throw error; }
+let lastHuman = previous;
 for (const [kind, topic] of Object.entries(TOPICS)) {
   const body = await (await fetch(`https://ntfy.sh/${topic}/json?poll=1&since=all`)).text();
-  const msgs = body.split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(m => m.event === 'message' && !seen.has(m.id));
+  const messages = body.split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(m => m.event === 'message');
+  if (kind === 'steer') for (const m of messages) {
+    if (!/^(🎼|🤖)/.test(m.title || '')) lastHuman = Math.max(lastHuman, m.time * 1000);
+  }
+  const msgs = messages.filter(m => !seen.has(m.id));
   for (const m of msgs.sort((a, b) => a.time - b.time)) {
     const day = new Date(m.time * 1000).toISOString().slice(0, 10), at = new Date(m.time * 1000).toISOString().slice(11, 16);
     const text = String(m.message || '').replace(/\r/g, '').slice(0, 4000);
@@ -16,5 +25,6 @@ for (const [kind, topic] of Object.entries(TOPICS)) {
     seen.add(m.id); added++;
   }
 }
+if (lastHuman > previous) await writeFile(marker, String(lastHuman) + '\n');
 await writeFile('brain/.seen', [...seen].join('\n') + '\n');
 console.log('mirrored', added);
