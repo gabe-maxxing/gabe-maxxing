@@ -1,0 +1,48 @@
+name: council of the east
+on:
+  issue_comment:
+    types: [created]
+  schedule:
+    - cron: "7 * * * *"   # heartbeat: hourly, 1 model each → 24/day + 8 conductor = 32 (free cap ~50/day)
+  workflow_dispatch:
+    inputs:
+      ask:
+        description: "question for the council"
+        required: false
+      verify_lending:
+        description: "Run the local loan/robot integration check without publishing a thought"
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency: council
+jobs:
+  council:
+    # only gabe can summon the council, only on issue #1
+    if: github.event_name != 'issue_comment' || (github.event.issue.number == 1 && github.event.comment.user.login == 'gabe-maxxing' && startsWith(github.event.comment.body, '/council'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Verify lending with a disposable fixture
+        if: github.event_name == 'workflow_dispatch' && inputs.verify_lending
+        run: node worker/test.mjs
+      - if: github.event_name != 'workflow_dispatch' || !inputs.verify_lending
+        run: node council/council.mjs
+        env:
+          LEND_URL: ${{ secrets.LEND_URL }}
+          ROBOT_TOKEN: ${{ secrets.ROBOT_TOKEN }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          SAMBANOVA_API_KEY: ${{ secrets.SAMBANOVA_API_KEY }}
+          COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
+          ASK: ${{ github.event.inputs.ask || github.event.comment.body }}
+          MAX_MODELS: ${{ github.event_name == 'schedule' && '1' || '5' }}
+          HEARTBEAT: ${{ github.event_name == 'schedule' }}
+          RUN: ${{ github.run_number }}

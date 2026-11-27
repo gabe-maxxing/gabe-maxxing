@@ -1,0 +1,16 @@
+name = "corvus-lend"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = false
+
+[[durable_objects.bindings]]
+name = "POOL"
+class_name = "LendingPool"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["LendingPool"]
