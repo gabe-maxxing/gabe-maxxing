@@ -4,6 +4,8 @@ import { readFile, writeFile, mkdir, appendFile } from 'node:fs/promises';
 const TOPIC = 'corvus-spread-1729';
 const SINCE = 1795706200; // launch line (unix s): test events before this never count
 await mkdir('spread', { recursive: true });
+// The map can read an empty archive before the first share.
+await appendFile('spread/events.ndjson', '');
 const seen = new Set((await readFile('spread/.seen', 'utf8').catch(() => '')).split('\n').filter(Boolean));
 const ID = /^(gabe|\d{1,3}-[a-z0-9]{3,8})$/, CH = /^(wa|tg|li|sms|copy|more|qr|link)$/;
 const clean = (m) => { let e; try { e = JSON.parse(m.message); } catch { return null; }
