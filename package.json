@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": { "stats": "tsx scripts/stats.ts", "stats:demo": "tsx scripts/stats.ts --demo" },
+  "devDependencies": { "tsx": "4.19.2" }
+}

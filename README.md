@@ -1,48 +1,68 @@
-<a href="https://corvus.gent/logo">
+<p align="center">
+  <a href="https://corvus.gent">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="stats/gabe-dark.svg">
+      <img src="stats/gabe.svg" width="720" alt="gabe — hello.">
+    </picture>
+  </a>
+</p>
+
+<p align="center"><sub>building things on a refurbished M1. <a href="https://corvus.gent">corvus.gent</a></sub></p>
+
+<p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/corvus-flight-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="assets/corvus-flight-light.gif">
-    <img align="right" src="assets/corvus-flight-light.gif" width="144" alt="Corvus in flight">
+    <source media="(prefers-color-scheme: dark)" srcset="stats/lines-shipped-dark.svg">
+    <img src="stats/lines-shipped.svg" width="720" alt="Lines shipped in the last 30 days">
   </picture>
-</a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="stats/summary-dark.svg">
+    <img src="stats/summary.svg" width="720" alt="Commits, pull requests and repos in the last year">
+  </picture>
+</p>
 
-<h1>I'm Gabriel 👋</h1>
+<details>
+<summary><b>more</b></summary>
+<br>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="stats/heatmap-dark.svg">
+    <img src="stats/heatmap.svg" width="720" alt="Lines shipped per day, last 365 days">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="stats/stack-dark.svg">
+    <img src="stats/stack.svg" width="720" alt="Languages by lines shipped">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="stats/streak-dark.svg">
+    <img src="stats/streak.svg" width="720" alt="Shipping streak">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="stats/agents-dark.svg">
+    <img src="stats/agents.svg" width="720" alt="Built with a fleet of agents">
+  </picture>
+</p>
+<sub>Lines are additions + deletions I authored, private repos included and never named. Lockfiles, vendored, generated, minified and binary files and huge data dumps are left out. Raw numbers: <a href="stats/stats.json">stats.json</a>.</sub>
+</details>
 
-<p>Crazy Belgian Latino who speaks 7 languages and a few programming languages. I haven’t spoken the programming ones in a while. I only prompt engineer rn.</p>
-
-<p>My stack is <a href="https://claude.ai/">Claude</a>, <a href="https://openai.com/codex/">Codex</a> and <a href="https://grok.com/">Grok</a>.</p>
-
-[Corvus](https://corvus.gent) · [LinkedIn](https://www.linkedin.com/in/francisco-gabriel-van-langenhove) · [X](https://x.com/gabe_maxxing)
-
-## The Cube
-
-I'm building a playable Rubik's Cube for Corvus. Its lab lets you step through a move sequence, compare where two paths end, and rerun seeded scramble experiments in the browser.
-
-[Follow The Cube’s development](https://github.com/Corvus-gent/loading-website/pull/161).
-
-## Contribute to my open-source projects
-
-- **NEW:** [Corvus Noctis](https://github.com/gabe-maxxing/corvus-noctis) is an operating system you can talk to. It's built from scratch in Rust in the spirit of TempleOS. [Try it in your browser](https://gabe-maxxing.github.io/corvus-noctis/), even on your phone.
-- [stayawake](https://github.com/gabe-maxxing/stayawake) keeps your Mac awake during long jobs.
-- **SINK LUMA:** [The Hackers Bay](https://github.com/Corvus-gent/the-hackers-bay) lets pirates RSVP to people and build their own parrot.
-- [nightjar-mcp](https://github.com/gabe-maxxing/nightjar-mcp) is a small MCP server you can host yourself.
-- [FlowSOM](https://github.com/gabe-maxxing/FlowSOM) benchmarks clustering for flow cytometry with Python and Numba.
-
----
-
-## Here's some cool stats about my coding obsession
-
-**380 commits in 14 days** on Corvus’s main branch, including contributors. Dates are in Brussels time.
-
-![Bar chart of daily commits to Corvus main, November 7–20, 2026](assets/coding-obsession.svg)
-
-[More Corvus build stats](https://corvus.gent/built#shipping)
+<p align="center"><a href="https://corvus.gent/build">full stats → corvus.gent/build</a></p>
 
 ---
 
-## Here are a few cool characters from projects I made
-
-| Whitney | Captain Squawk |
+| | |
 | :---: | :---: |
-| <a href="https://github.com/gabe-maxxing/stayawake"><img src="assets/whitney-terminal.gif" width="380" alt="Whitney animating inside the stayawake terminal"></a> | <a href="https://corvus.gent/hackersbay"><img src="assets/captain-squawk.gif" width="160" alt="Captain Squawk typing and squawking in pixel art"></a> |
-| The [stayawake](https://github.com/gabe-maxxing/stayawake) watchdog. | The [Hackers Bay](https://corvus.gent/hackersbay) parrot. |
+| <a href="https://corvus.gent"><img src="assets/web-corvus.gif" width="400" alt="corvus.gent"></a> | <a href="https://corvus.gent/the6cube"><img src="assets/web-the6cube.gif" width="400" alt="The Cube"></a> |
+| [corvus.gent](https://corvus.gent) — the realm. | [The Cube](https://corvus.gent/the6cube) — a cube you can solve in C. |
+| <a href="https://corvus.gent/raygifts"><img src="assets/web-raygifts.gif" width="400" alt="Raygifts"></a> | <a href="https://github.com/gabe-maxxing/corvus-noctis"><img src="assets/corvus-os-boot.gif" width="400" alt="Corvus Noctis booting"></a> |
+| [Raygifts](https://corvus.gent/raygifts) — wrap it, hack it. | [Corvus Noctis](https://github.com/gabe-maxxing/corvus-noctis) — an OS you can talk to. |
+| <a href="https://github.com/Corvus-gent/loading-website"><img src="assets/ai-pipeline.gif" width="400" alt="The agent pipeline"></a> | <a href="https://corvus.gent/hackersbay"><img src="assets/captain-squawk.gif" width="160" alt="Captain Squawk"></a> |
+| The agent pipeline. | [Captain Squawk](https://corvus.gent/hackersbay) — the Hackers Bay parrot. |
+
+## Contribute
+
+- [Corvus Noctis](https://github.com/gabe-maxxing/corvus-noctis): an operating system you can talk to, in Rust. [Try it](https://gabe-maxxing.github.io/corvus-noctis/).
+- [stayawake](https://github.com/gabe-maxxing/stayawake): keeps your Mac awake during long jobs.
+- [The Hackers Bay](https://github.com/Corvus-gent/the-hackers-bay): pirates RSVP to people and build a parrot.
+- [nightjar-mcp](https://github.com/gabe-maxxing/nightjar-mcp): a small MCP server you can host yourself.
+- [FlowSOM](https://github.com/gabe-maxxing/FlowSOM): clustering benchmarks for flow cytometry.
+
+<p align="center"><sub>ΓΝΩΘΙ ΣΑΥΤΟΝ · <a href="https://x.com/gabe_maxxing">X</a> · <a href="https://www.linkedin.com/in/francisco-gabriel-van-langenhove">LinkedIn</a></sub></p>
