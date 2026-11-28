@@ -12,7 +12,9 @@
 
 <p>My stack is <a href="https://claude.ai/">Claude</a>, <a href="https://openai.com/codex/">Codex</a> and <a href="https://grok.com/">Grok</a>.</p>
 
-[Corvus](https://corvus.gent) · [LinkedIn](https://www.linkedin.com/in/francisco-gabriel-van-langenhove) · [X](https://x.com/gabe_maxxing)
+[Corvus](https://corvus.gent) · [LinkedIn](https://www.linkedin.com/in/francisco-gabriel-van-langenhove) · [X](https://x.com/gabe_maxxing) · [Fiverr](https://www.fiverr.com/gabe_maxxing)
+
+**Need a website fast?** Short call, same-day demo, we iterate until you love it. [Hire me on Fiverr →](https://www.fiverr.com/gabe_maxxing)
 
 ## The Cube
 
